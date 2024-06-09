@@ -7,6 +7,28 @@
 
 function countVowels(str) {
     // Your code here
+    let cnt=0;
+    str=str.toLowerCase();
+    for(let i=0;i<str.length;i++){
+      switch(str[i]){
+        case 'a':
+          cnt++;
+          break;
+        case 'e':
+          cnt++;
+          break;
+        case 'i':
+          cnt++;
+          break;
+        case 'o':
+          cnt++;
+          break;
+        case 'u':
+          cnt++;
+          break;
+      }
+    }
+    return cnt;
 }
 
 module.exports = countVowels;
